@@ -1,45 +1,36 @@
-(function () {
+/*!
+ * vue-dayjs
+ * Copyright(c) 2019 Julio Peña
+ * MIT Licensed
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ * @private
+ */
+
+const dayjs = require('dayjs');
+
+export default {
   /**
-    * Install plugin
-     * @param Vue
-     * @param dayjs
+    * Vue
+    * @param {Vue} Vue
   */
-
-  function plugin(Vue, dayjs) {
-
-    if (plugin.installed) {
-      return;
-    }
-    plugin.installed = true;
-
-    if (!dayjs) {
-        console.error("You have to install dayjs");
-        return;
-    }
-
-    Vue.dayjs = dayjs;
-
+  install(Vue) {
     Object.defineProperties(Vue.prototype, {
-      dayjs: {
+      $dayjs: {
         get() {
           return dayjs;
-        }
+        },
       },
       $date: {
         get() {
           return dayjs;
-        }
+        },
       }
     });
-
+    Vue.dayjs = dayjs;
   }
-
-  if (typeof exports === "object") {
-    module.exports = plugin;
-  } else if (typeof define === "function" && define.amd) {
-    define([], function(){ return plugin; });
-  } else if (window.Vue && window.dayjs) {
-    Vue.use(plugin, window.dayjs);
-  }
-
-})();
+};
