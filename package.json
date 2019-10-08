@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Juceztp/vue-dayjs/issues"
   },
-  "homepage": "https://github.com/Juceztp/vue-dayjs#readme"
+  "homepage": "https://github.com/Juceztp/vue-dayjs#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
