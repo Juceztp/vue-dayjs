@@ -1,0 +1,29 @@
+{
+  "name": "vue-dayjs",
+  "version": "1.0.0-beta",
+  "description": "A small wrapper for integrating dayjs to Vuejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juceztp/vue-dayjs.git"
+  },
+  "keywords": [
+    "vue",
+    "custom",
+    "date",
+    "time",
+    "dayjs",
+    "day.js",
+    "immutable",
+    "moment"
+  ],
+  "author": "jucezt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juceztp/vue-dayjs/issues"
+  },
+  "homepage": "https://github.com/Juceztp/vue-dayjs#readme"
+}
