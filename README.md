@@ -3,7 +3,7 @@
 
 A small wrapper for integrating dayjs to Vuejs
 
-Day.js is a minimalist (Fast 2kB) JavaScript library for modern browsers with a largely Moment.js-compatible API. If you use Moment.js, you already know how to use Day.js.
+[Dayjs](https://github.com/iamkun/dayjs) is a minimalist (Fast 2kB) JavaScript library for modern browsers with a largely Moment.js-compatible API. If you use Moment.js, you already know how to use Day.js.
 
 ## Installation
 
@@ -18,6 +18,13 @@ import VueDayjs from 'vue-dayjs-plugin'
 
 Vue.use(VueDayjs)
 ```
+
+## Example
+
+### JS
+    this.$date('2018-08-08').format('DD/MM/YYYY');
+### HTML
+    <span> {{ $date('2018-08-08').format('DD/MM/YYYY') }} </span>
 
 ## License
 
