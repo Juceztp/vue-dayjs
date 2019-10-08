@@ -1,5 +1,5 @@
 {
-  "name": "vue-dayjs",
+  "name": "vue-dayjs-plugin",
   "version": "1.0.0-beta",
   "description": "A small wrapper for integrating dayjs to Vuejs",
   "main": "index.js",
