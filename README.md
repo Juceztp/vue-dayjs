@@ -28,4 +28,3 @@ Vue.use(VueDayjs)
 [dependencies]: https://badgen.net/npm/dependencies/vue-dayjs-plugin
 [size]: https://badgen.net/packagephobia/install/vue-dayjs-plugin
 [npm-version-image]: https://badgen.net/npm/v/vue-dayjs-plugin
-```
