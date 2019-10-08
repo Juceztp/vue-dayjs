@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Juceztp/vue-dayjs#readme",
   "dependencies": {
+    "dayjs": "^1.8.16",
     "vue": "^2.6.10"
   }
 }
