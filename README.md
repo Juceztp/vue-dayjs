@@ -5,13 +5,53 @@ A small wrapper for integrating dayjs to Vuejs
 
 [Dayjs](https://github.com/iamkun/dayjs) is a minimalist (Fast 2kB) JavaScript library for modern browsers with a largely Moment.js-compatible API. If you use Moment.js, you already know how to use Day.js.
 
-## Installation
+
+## Usage (Recommended) (Without installing this library)
+
+plugins/Dayjs.js
+```bash
+import Vue from 'vue';
+import dayjs from 'dayjs';
+
+Object.defineProperties(Vue.prototype, {
+    $date: {
+        get() {
+            return dayjs
+        }
+    }
+});
+```
+main.js
+```bash
+//Plugins
+import '@/plugins/Dayjs';
+```
+
+If you need to use an extra plugin from the dayjs library. [example](https://day.js.org/docs/en/plugin/relative-time)
+
+plugins/Dayjs.js
+```bash
+import Vue from 'vue';
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
+dayjs.extend(relativeTime);
+
+Object.defineProperties(Vue.prototype, {
+    $date: {
+        get() {
+            return dayjs
+        }
+    }
+});
+```
+
+## Usage
 
 ```bash
 npm install vue-dayjs-plugin
 ```
 
-## Usage 
 
 ```js
 import VueDayjs from 'vue-dayjs-plugin'
