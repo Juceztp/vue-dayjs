@@ -27,12 +27,12 @@
   },
   "homepage": "https://github.com/Juceztp/vue-dayjs#readme",
   "dependencies": {
-    "dayjs": "^1.8.16"
+    "dayjs": "^1.8.27"
   },
   "peerDependencies": {
     "vue": ">=1.x.x"
   },
   "devDependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.11"
   }
 }
