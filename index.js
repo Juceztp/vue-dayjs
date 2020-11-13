@@ -18,15 +18,15 @@ export default {
     * Vue
     * @param {Vue} Vue
   */
-  install(Vue) {
+  install: function (Vue) {
     Object.defineProperties(Vue.prototype, {
       $dayjs: {
-        get() {
+        get: function() {
           return dayjs;
         },
       },
       $date: {
-        get() {
+        get: function() {
           return dayjs;
         },
       }
