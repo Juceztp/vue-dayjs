@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A small wrapper for integrating dayjs to Vuejs",
   "main": "index.js",
+  "engine": {
+    "node": ">= 1" 
+  }
   "scripts": {
     "test": "npm run test"
   },
